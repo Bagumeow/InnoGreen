@@ -42,8 +42,3 @@ def router():
 app.include_router(users.router)
 app.include_router(current_user.router)
 # app.include_router(patients.router)
-
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host=os.getenv("HOST"), port=8123)	
