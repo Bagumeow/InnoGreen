@@ -2,6 +2,6 @@ fastapi
 python-jose
 passlib
 psycopg2-binary
-python-dotenv
+python-dotenv==0.15.0
 python-multipart
 uvicorn
