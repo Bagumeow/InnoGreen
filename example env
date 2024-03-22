@@ -1,0 +1,16 @@
+create .env file
+
+SECRET_KEY = 
+ALGORITHM = 
+ACCESS_TOKEN_EXPIRE_MINUTES = 
+
+
+
+DB_NAME =  
+DB_HOST= 
+DB_PORT= 
+DB_USER= 
+DB_PASS= 
+
+HOST = 
+PORT = 
