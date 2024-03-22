@@ -22,11 +22,6 @@ html = f"""
     <body>
         <div class="bg-gray-200 p-4 rounded-lg shadow-lg">
             <h1>Hello from FastAPI@{__version__}</h1>
-            <ul>
-                <li><a href="/docs">/docs</a></li>
-                <li><a href="/redoc">/redoc</a></li>
-            </ul>
-            <p>Powered by <a href="https://vercel.com" target="_blank">Vercel</a></p>
         </div>
     </body>
 </html>
@@ -42,3 +37,8 @@ def router():
 app.include_router(users.router)
 app.include_router(current_user.router)
 # app.include_router(patients.router)
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host=os.getenv("HOST"), port=8123)	
