@@ -29,7 +29,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES = '30'
 
 DB_NAME =  "IUH-InnoGL"
 DB_HOST= "aws-0-ap-southeast-1.pooler.supabase.com"
-DB_PORT= "6543"
+DB_PORT= "5432"
 DB_USER= "postgres.vfkzqxldkzddopenrihb"
 DB_PASS= "Dumplings@1123!!"
 
@@ -51,7 +51,7 @@ def create_connection():
                                 password=DB_PASS,
                                 host=DB_HOST,
                                 port=DB_PORT,
-                                pgbouncer=True
+                                # pgbouncer=True
                                 )
         print("Database connected successfully")
     except:
