@@ -96,6 +96,7 @@ class UserInDB(User):
 
 def get_user(conn, username: str):
     cursor = create_cursor(conn)
+    cursor.execute("ROLLBACK")
     cursor.execute('SELECT * FROM users WHERE username=%s', (username,))
     result = cursor.fetchone()
     if result:
@@ -104,6 +105,7 @@ def get_user(conn, username: str):
 
 def check_dupli_user_or_email(conn, username: str, email: str):
     cursor = create_cursor(conn)
+    cursor.execute("ROLLBACK")
     cursor.execute('SELECT * FROM users WHERE username=%s OR email=%s', (username,email))
     result = cursor.fetchone()
     if result:

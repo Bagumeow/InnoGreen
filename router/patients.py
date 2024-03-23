@@ -1,4 +1,4 @@
-from tools_BE import *
+from tools.tools import *
 from fastapi import  FastAPI,status ,APIRouter,Depends
 from current_user import get_current_user
 
@@ -11,7 +11,7 @@ async def create_patient_profile(patient : Patient,access_token: str = Depends(o
 
     conn = create_connection()
     cursor = create_cursor(conn)
-
+    cursor.execute("ROLLBACK")
     table_name = "patients"
     columns= "user_id, name_p, age_p, address_p, path_img_char, note_case, detail_case, treatment"
     insert_query = f'INSERT INTO {table_name} ({columns}) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)'
