@@ -6,30 +6,23 @@ from fastapi.staticfiles import StaticFiles
 from fastapi import FastAPI, __version__
 from fastapi.responses import HTMLResponse
 from dotenv import load_dotenv
-
+from fastapi.middleware.cors import CORSMiddleware
 
 load_dotenv('.env')
 app = FastAPI()
+
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-html = f"""
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>FastAPI on Vercel</title>
-        <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
-    </head>
-    <body>
-        <div class="bg-gray-200 p-4 rounded-lg shadow-lg">
-            <h1>API by Dumplings team</h1>
-        </div>
-    </body>
-</html>
-"""
-
-@app.get("/")
-async def root():
-    return HTMLResponse(html)
 @app.get("/")
 def router():
     return {"message": "API from Dumplings team project"}
