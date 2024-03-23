@@ -12,14 +12,26 @@ from dotenv import load_dotenv
 load_dotenv('.env')
 
 
-SECRET_KEY = os.getenv("SECRET_KEY")
-ALGORITHM = os.getenv("ALGORITHM")
-ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES"))
-DB_NAME = os.getenv("DB_NAME")
-DB_USER = os.getenv("DB_USER")
-DB_PASS = os.getenv("DB_PASS")
-DB_HOST = os.getenv("DB_HOST")
-DB_PORT = os.getenv("DB_PORT")
+# SECRET_KEY = os.getenv("SECRET_KEY")
+# ALGORITHM = os.getenv("ALGORITHM")
+# ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES"))
+# DB_NAME = os.getenv("DB_NAME")
+# DB_USER = os.getenv("DB_USER")
+# DB_PASS = os.getenv("DB_PASS")
+# DB_HOST = os.getenv("DB_HOST")
+# DB_PORT = os.getenv("DB_PORT")
+
+SECRET_KEY = "09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7"
+ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = '30'
+
+
+
+DB_NAME =  "IUH-InnoGL"
+DB_HOST= "aws-0-ap-southeast-1.pooler.supabase.com"
+DB_PORT= "6543"
+DB_USER= "postgres.vfkzqxldkzddopenrihb"
+DB_PASS= "Dumplings@1123!!"
 
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
