@@ -23,14 +23,6 @@ DB_PORT = os.getenv("DB_PORT")
 
 
 
-
-# DB_NAME =  "IUH-InnoGL"
-# DB_HOST= "aws-0-ap-southeast-1.pooler.supabase.com"
-# DB_PORT= "5432"
-# DB_USER= "postgres.vfkzqxldkzddopenrihb"
-# DB_PASS= "Dumplings@1123!!"
-
-
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
