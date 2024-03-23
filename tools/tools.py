@@ -14,7 +14,7 @@ load_dotenv('.env')
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 ALGORITHM = os.getenv("ALGORITHM")
-ACCESS_TOKEN_EXPIRE_MINUTES = os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES")
+ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES"))
 DB_NAME = os.getenv("DB_NAME")
 DB_USER = os.getenv("DB_USER")
 DB_PASS = os.getenv("DB_PASS")
@@ -38,7 +38,9 @@ def create_connection():
                                 user=DB_USER,
                                 password=DB_PASS,
                                 host=DB_HOST,
-                                port=DB_PORT)
+                                port=DB_PORT,
+                                pgbouncer=True
+                                )
         print("Database connected successfully")
     except:
         print("Database not connected successfully")
