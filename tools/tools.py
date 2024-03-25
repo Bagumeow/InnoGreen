@@ -1,4 +1,3 @@
-from fastapi.security import OAuth2PasswordBearer
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 from pydantic import BaseModel
@@ -7,6 +6,7 @@ from datetime import datetime, timedelta, timezone
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 import psycopg2
 import os
+from fastapi import  HTTPException, status, Depends, APIRouter
 
 from dotenv import load_dotenv
 load_dotenv('.env')
@@ -56,46 +56,61 @@ class Token(BaseModel):
     token_type: str
 
 class TokenData(BaseModel):
-    username: Union[str, None] = None
+    email: Union[str, None] = None
     
 class User(BaseModel):
-    username: str
+    email: str
     role: Union[str, None] = None
     full_name: Union[str, None] = None
     phone_number : Union[str, None] = None
+    avatar : Union[str, None] = None
     gender : Union[bool, None] = None
-    email: Union[str, None] = None
-    age: Union[int, None] = None
-    address: Union[str, None] = None
 
 class Patient(BaseModel):
-    user_id : int 
-    name_p: Union[str, None] = None
-    age_p : Union[int, None] = None
-    address_p : Union[str, None] = None
-    path_img_char : Union[str, None] = None 
+    name_patient: Union[str, None] = None
+    age_patient : Union[int, None] = None
+    address_patient : Union[str, None] = None
+    path_img_chart : Union[str, None] = None 
     note_case : Union[str, None] = None
-    detail_case : Union[str, None] = None
+    detail : Union[str, None] = None
     treatment : Union[str, None] = None
+
+class PatientInDB(Patient):
+    user_id : int 
 
 
 class UserInDB(User):
     hashed_password: str
 
+def decode_bearer_token(token: str):
+    credentials_exception = HTTPException(
+        status_code=status.HTTP_401_UNAUTHORIZED,
+        detail="Could not validate credentials",
+        headers={"WWW-Authenticate": "Bearer"},
+    )
+    try:
+        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        email: str = payload.get("sub")
+        if email is None:
+            raise credentials_exception
+        token_data = TokenData(email=email)
+        return token_data
+    except JWTError:
+        raise credentials_exception
 
-def get_user(conn, username: str):
+
+def get_user(conn, email: str):
     cursor = create_cursor(conn)
     cursor.execute("ROLLBACK")
-    cursor.execute('SELECT * FROM users WHERE username=%s', (username,))
+    cursor.execute(f"SELECT * FROM users WHERE email = '{email}'")
     result = cursor.fetchone()
     if result:
-        return UserInDB(username=result[1],hashed_password=result[2],role=result[3],full_name=result[4],phone_number=result[5],
-                        gender=result[6],email=result[7],age=result[8],address=result[9])
+        return result[0],UserInDB(email=result[1],hashed_password=result[2],role=result[3],full_name=result[4],phone_number=result[5],avatar=result[6],gender=result[7])
 
-def check_dupli_user_or_email(conn, username: str, email: str):
+def check_dupli_user_or_email(conn, email: str):
     cursor = create_cursor(conn)
     cursor.execute("ROLLBACK")
-    cursor.execute('SELECT * FROM users WHERE username=%s OR email=%s', (username,email))
+    cursor.execute(f"SELECT * FROM users WHERE email = '{email}'")
     result = cursor.fetchone()
     if result:
         return True
@@ -103,8 +118,8 @@ def check_dupli_user_or_email(conn, username: str, email: str):
         return False    
 
 
-def authenticate_user(conn, username: str, password: str):
-    user = get_user(conn, username)
+def authenticate_user(conn, email: str, password: str):
+    _,user = get_user(conn, email)
     if not user:
         return False
     if not verify_password(password, user.hashed_password):

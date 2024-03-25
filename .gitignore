@@ -5,3 +5,4 @@ env
 *.ipynb
 __pycache__
 *.pyc
+inno
