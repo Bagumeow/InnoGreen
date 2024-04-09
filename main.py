@@ -1,6 +1,6 @@
 from tools.tools import *
 from fastapi import FastAPI
-from router import  users,current_user,patients
+from router import  users,current_user,patients,chatapi,resultapi
 import os
 from fastapi.staticfiles import StaticFiles
 from fastapi import FastAPI, __version__
@@ -31,9 +31,12 @@ def router():
 app.include_router(users.router)
 app.include_router(current_user.router)
 app.include_router(patients.router)
+app.include_router(chatapi.router)
+app.include_router(resultapi.router)
 
 
-# if __name__ == "__main__":
-#     import uvicorn
-#     uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)	
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=4040)	
 

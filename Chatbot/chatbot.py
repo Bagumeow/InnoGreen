@@ -19,11 +19,12 @@ from langchain.prompts.chat import (
 )
 from os.path import join, dirname
 from dotenv import load_dotenv
-from prompt import TEMPLATE_SYSTEM
+from Chatbot.prompt import TEMPLATE_SYSTEM
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 
 from uuid import uuid4
+print(dirname(__file__))
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 # str(uuid4())
@@ -46,6 +47,11 @@ class Chatbot:
                     }
         self.CHAIN_TYPE = 'stuff' 
         self.embeddings = self.gen_embeddings(model_name)
+        # print pwd
+        # move to the directory Chatbot
+        os.chdir(os.path.dirname(__file__))
+        # print(os.getcwd())
+        # print(os.path.dirname(__file__))
         self.vectorstore = FAISS.load_local("faiss_index", self.embeddings)
         self.chain = self.load_retrieval_chain(self.vectorstore, CHAIN_TYPE=self.CHAIN_TYPE)
 
