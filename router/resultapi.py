@@ -1,8 +1,8 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 from typing import List
 
-app = FastAPI()
+router = APIRouter()
 
 class SurveyQuestion(BaseModel):
     id: int
@@ -12,13 +12,14 @@ class SurveyQuestion(BaseModel):
 class SurveyResponse(BaseModel):
     type: str
     questions: List[SurveyQuestion]
+    token: str
 
 class SurveyResult(BaseModel):
     point: float
     token: str
 
-@app.post("/survey_result/")
-async def process_survey_result(survey: SurveyResponse, token: str):
+@router.post("/survey_result/")
+async def process_survey_result(survey: SurveyResponse):
     gt_points = 0
     vdt_points = 0
     vdti_points = 0
@@ -42,5 +43,5 @@ async def process_survey_result(survey: SurveyResponse, token: str):
     else:
         total_points = 0
     
-    result = SurveyResult(point=total_points, token=token)
+    result = SurveyResult(point=total_points, token=survey.token)
     return result
