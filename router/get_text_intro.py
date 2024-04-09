@@ -4,7 +4,7 @@ from tools.tools import *
 from fastapi import FastAPI, Depends, HTTPException, status, APIRouter
 
 router = APIRouter()
-@router.post("/info")
+@router.get("/info")
 async def register():
     conn = create_connection()
     cursor = create_cursor(conn)
