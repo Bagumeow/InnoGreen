@@ -3,7 +3,7 @@ from tools.tools import *
 from fastapi import  HTTPException, status, Depends, APIRouter
 router = APIRouter()
 
-@router.post("/user", response_model=UserInDB)
+@router.get("/user", response_model=User)
 async def get_current_user(access_token: str = Depends(oauth2_scheme)):
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
@@ -13,11 +13,12 @@ async def get_current_user(access_token: str = Depends(oauth2_scheme)):
     conn = create_connection()
     token_data = decode_bearer_token(access_token)
     _,user = get_user(conn, token_data.email)
+    
+    
     if user is None:
         raise credentials_exception
     conn.close()
     return user
-
 # if __name__ == "__main__":
 #     import uvicorn
 

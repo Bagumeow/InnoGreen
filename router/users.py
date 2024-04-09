@@ -13,18 +13,16 @@ class UserCreate(BaseModel):
     phone_number : Union[str, None] = None
     avatar : Union[str, None] = None
     gender : Union[bool, None] = None
-    re_password : Union[str, None] = None
-    
+class RegisterResponse(BaseModel):
+    status: bool
 # @app.post("/register/",response_model=User, status_code=status.HTTP_201_CREATED)
-@router.post("/register/",response_model=User, status_code=status.HTTP_201_CREATED)
+@router.post("/register/",response_model=RegisterResponse, status_code=status.HTTP_201_CREATED)
 async def register(user: UserCreate):
     conn = create_connection()
     cursor = create_cursor(conn)
 
     if check_dupli_user_or_email(conn, user.email):
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Tài Khoản hoặc Email đã tồn tại!!!")
-    if (user.password != user.re_password):
-        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Nhập lại mật khẩu phải trùng với mật khẩu")
     
     table_name = "users"
     columns= "email, hashed_password, role, full_name, phone_number, avatar, gender"
@@ -35,8 +33,10 @@ async def register(user: UserCreate):
     conn.commit()
     _,result = get_user(conn, user.email)
     conn.close()
-    if result:
-        return result
+    return {
+        "status": bool(result)
+    }
+        
 
 class Login(BaseModel):
     email: str
