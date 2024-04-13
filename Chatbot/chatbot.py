@@ -25,7 +25,7 @@ from langchain.prompts import PromptTemplate
 
 from uuid import uuid4
 print(dirname(__file__))
-dotenv_path = join(dirname(__file__), '.env')
+dotenv_path = join(dirname(__file__), '../.env')
 load_dotenv(dotenv_path)
 # str(uuid4())
 os.environ['OPENAI_API_KEY']=os.getenv("OPENAI_API_KEY")

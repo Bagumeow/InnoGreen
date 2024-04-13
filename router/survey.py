@@ -1,6 +1,7 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Depends, status
 from pydantic import BaseModel
 from typing import List
+from .current_user import *
 
 router = APIRouter()
 
@@ -18,8 +19,8 @@ class SurveyResult(BaseModel):
     point: float
     token: str
 
-@router.post("/survey_result/")
-async def process_survey_result(survey: SurveyResponse):
+@router.post("/survey_result/", status_code=status.HTTP_201_CREATED)
+async def process_survey_result(survey: SurveyResponse, access_token: str = Depends(oauth2_scheme)):
     gt_points = 0
     vdt_points = 0
     vdti_points = 0
@@ -43,5 +44,5 @@ async def process_survey_result(survey: SurveyResponse):
     else:
         total_points = 0
     
-    result = SurveyResult(point=total_points, token=survey.token)
+    result = SurveyResult(point=total_points, token=access_token)
     return result

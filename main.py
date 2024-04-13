@@ -1,6 +1,6 @@
 from tools.tools import *
 from fastapi import FastAPI
-from router import  users,current_user,patients,chatapi,resultapi
+from router import chat, survey, users,current_user,patients
 import os
 from fastapi.staticfiles import StaticFiles
 from fastapi import FastAPI, __version__
@@ -31,9 +31,8 @@ def router():
 app.include_router(users.router)
 app.include_router(current_user.router)
 app.include_router(patients.router)
-app.include_router(chatapi.router)
-app.include_router(resultapi.router)
-
+app.include_router(chat.router)
+app.include_router(survey.router)
 
 
 if __name__ == "__main__":
