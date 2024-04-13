@@ -1,0 +1,118 @@
+[
+    {
+        "id": "219",
+        "name": "Giao tiếp:",
+        "qset": [
+            {
+                "id_ques": 1.0,
+                "question": "Trẻ có chỉ được 7 bộ phận cơ thể không? VD, Tay, chân,đầu..."
+            },
+            {
+                "id_ques": 2.0,
+                "question": "Trẻ có nói được câu 3-4 từ đúng ngữ cảnh không? VD, A mẹ về rồi"
+            },
+            {
+                "id_ques": 3.0,
+                "question": "Trẻ có biết nói họ và tên của mình khi được hỏi không?"
+            }
+        ]
+    },
+    {
+        "id": "548",
+        "name": "Vận động thô:",
+        "qset": [
+            {
+                "id_ques": 4.0,
+                "question": "Trẻ có tự bước lên cầu thang mỗi chân một bậc không?"
+            },
+            {
+                "id_ques": 5.0,
+                "question": "Trẻ có biết co hai chân nhảy về phía trước không?"
+            },
+            {
+                "id_ques": 6.0,
+                "question": "Trẻ có thể đá hoặc ném bóng/đá đồ vật mà không cần bám tay không?"
+            }
+        ]
+    },
+    {
+        "id": "609",
+        "name": "Vận động tinh:",
+        "qset": [
+            {
+                "id_ques": 7.0,
+                "question": "Trẻ có biết xâu một chuỗi hạt, xỏ dây giầy không?"
+            },
+            {
+                "id_ques": 8.0,
+                "question": "Trẻ có biết bắt chước vẽ 1 đường ngang/ dọc/ vòng tròn không?"
+            },
+            {
+                "id_ques": 9.0,
+                "question": "Trẻ có biết cầm kéo đúng cách không (có thể chưa biết cắt)?"
+            }
+        ]
+    },
+    {
+        "id": "231",
+        "name": "Bắt chước và học:",
+        "qset": [
+            {
+                "id_ques": 10.0,
+                "question": "Trẻ có biết bắt chước xếp 4 đồ vật thành 1 hàng ngang không?"
+            },
+            {
+                "id_ques": 11.0,
+                "question": "Trẻ có nói tên người trong ảnh khi bạn chỉ vào và hỏi “Ai đây” không?"
+            },
+            {
+                "id_ques": 12.0,
+                "question": "Trẻ có nhắc lại đúng thứ tự khi bạn nói 2-3 số liên tiếp không?VD,825(không dùng 3 số liên tục 123)"
+            }
+        ]
+    },
+    {
+        "id": "703",
+        "name": "Cá nhân- Xã hội:",
+        "qset": [
+            {
+                "id_ques": 13.0,
+                "question": "Trẻ có biết tự xúc ăn bằng thìa mà không rơi vãi không?"
+            },
+            {
+                "id_ques": 14.0,
+                "question": "Trẻ có biết tự mình mặc quần áo không?"
+            },
+            {
+                "id_ques": 15.0,
+                "question": "Trẻ có trả lời đúng khi bạn hỏi “Con là trai hay gái” không?"
+            }
+        ]
+    },
+    {
+        "id": "527",
+        "name": "Các dấu hiệu khác thường khác:",
+        "qset": [
+            {
+                "id_ques": 16.0,
+                "question": "Trẻ có khi nào bị co giật/ ngất xỉu không?"
+            },
+            {
+                "id_ques": 17.0,
+                "question": "Trẻ có bất thường ở mặt, cổ, cột sống, thân mình, tay chân không?"
+            },
+            {
+                "id_ques": 18.0,
+                "question": "Trẻ có bất thường ở tai, bệnh về tai hoặc nghe kém không?"
+            },
+            {
+                "id_ques": 19.0,
+                "question": "Trẻ có bất thường ở mắt hoặc nhìn kém không?"
+            },
+            {
+                "id_ques": 20.0,
+                "question": "Trẻ có các bất thường nào khác không? VD: mặt, môi/ hàm ếch,..."
+            }
+        ]
+    }
+]

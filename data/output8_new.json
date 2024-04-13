@@ -1,0 +1,118 @@
+[
+    {
+        "id": "278",
+        "name": "Giao tiếp:",
+        "qset": [
+            {
+                "id_ques": 1.0,
+                "question": "Trẻ có kể tên 3 thứ thuộc nhóm không? VD: chó,mèo,gà thuộc nhóm con vật."
+            },
+            {
+                "id_ques": 2.0,
+                "question": "Trẻ có mô tả 2 đặc điểm của đồ vật không? VD, Quả bóng to và tròn"
+            },
+            {
+                "id_ques": 3.0,
+                "question": "Trẻ có dùng từ chỉ số lượng, thời gian đề không? VD: một cái kẹo, sáng nay..."
+            }
+        ]
+    },
+    {
+        "id": "771",
+        "name": "Vận động thô:",
+        "qset": [
+            {
+                "id_ques": 4.0,
+                "question": "Trẻ có tự trèo lên và trượt xuống cầu thang/ bậc cửa không?"
+            },
+            {
+                "id_ques": 5.0,
+                "question": "Trẻ có biết nhảy lò cò mà không bị ngã không?"
+            },
+            {
+                "id_ques": 6.0,
+                "question": "Trẻ có biết bắt bóng /đồ chơi/đồ vật bằng hai tay không?"
+            }
+        ]
+    },
+    {
+        "id": "554",
+        "name": "Vận động tinh:",
+        "qset": [
+            {
+                "id_ques": 7.0,
+                "question": "Trẻ có biết dùng kéo để cắt giấy không?"
+            },
+            {
+                "id_ques": 8.0,
+                "question": "Trẻ có biết vẽ hình vuông, hình tròn, dấu cộng theo mẫu không?"
+            },
+            {
+                "id_ques": 9.0,
+                "question": "Trẻ có biết vẽ người gồm 3 bộ phận không? VD: đầu, chân, tay."
+            }
+        ]
+    },
+    {
+        "id": "708",
+        "name": "Bắt chước và học:",
+        "qset": [
+            {
+                "id_ques": 10.0,
+                "question": "Trẻ có biết phân biệt về kích thước không? VD, Chỉ vào vật nhỏ hơn"
+            },
+            {
+                "id_ques": 11.0,
+                "question": "Trẻ có phân biệt “trên, dưới, giữa” không?VD: sách trên bàn..."
+            },
+            {
+                "id_ques": 12.0,
+                "question": "Trẻ có phân biệt được 5 màu khác nhau không?VD: đỏ, xanh, vàng..."
+            }
+        ]
+    },
+    {
+        "id": "113",
+        "name": "Cá nhân- Xã hội:",
+        "qset": [
+            {
+                "id_ques": 13.0,
+                "question": "Trẻ có biết tự rửa mặt, đánh răng không?"
+            },
+            {
+                "id_ques": 14.0,
+                "question": "Trẻ có biết tự mình mặc và cởi quần áo không?"
+            },
+            {
+                "id_ques": 15.0,
+                "question": "Trẻ có biết kể tên ít nhất 2 bạn của mình không? ( không tính tên chị em trong nhà )"
+            }
+        ]
+    },
+    {
+        "id": "504",
+        "name": "Các dấu hiệu khác thường khác: ",
+        "qset": [
+            {
+                "id_ques": 16.0,
+                "question": "Trẻ có khi nào bị co giật/ ngất xỉu không?"
+            },
+            {
+                "id_ques": 17.0,
+                "question": "Trẻ có bất thường ở cổ, cột sống, thân mình, tay chân không?"
+            },
+            {
+                "id_ques": 18.0,
+                "question": "Trẻ có bất thường ở tai, bệnh về tai hoặc nghe kém không?"
+            },
+            {
+                "id_ques": 19.0,
+                "question": "Trẻ có bất thường ở mắt hoặc nhìn kém không?"
+            },
+            {
+                "id_ques": 20.0,
+                "question": "Trẻ có các bất thường nào khác không? VD: mặt, môi/ hàm ếch,..."
+            }
+        ]
+    }
+]

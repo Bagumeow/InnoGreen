@@ -8,7 +8,7 @@ from .current_user import *
 
 router = APIRouter()
 @router.post("/user/create_profile/", status_code=status.HTTP_201_CREATED)
-async def create_patient_profile(patient : Patient,access_token: str = Depends(oauth2_scheme)): 
+async def create_patient_profile(patient : Patient, access_token: str = Depends(oauth2_scheme)): 
 
     conn = create_connection()
     cursor = create_cursor(conn)
