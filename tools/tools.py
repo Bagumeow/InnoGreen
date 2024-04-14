@@ -7,6 +7,7 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 import psycopg2
 import os
 from fastapi import  HTTPException, status, Depends, APIRouter
+import json
 
 from dotenv import load_dotenv
 load_dotenv('.env')
@@ -74,7 +75,7 @@ class Patient(BaseModel):
     note_case : Union[str, None] = None
     detail : Union[str, None] = None
     treatment : Union[str, None] = None
-
+    avartar : Union[str,None] = None
 class PatientInDB(Patient):
     user_id : int 
 
@@ -135,3 +136,14 @@ def create_access_token(data: dict, expires_delta: Union[timedelta, None] = None
     to_encode.update({"exp": expire})
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
+
+def get_questions_by_patient_id(patient_id):
+    with open('\innogreen-be\data\questions_set.json', 'r') as file:
+        question_data = json.load(file)
+    
+    for patient_questions in question_data:
+        for patient_key, questions in patient_questions.items():
+            if patient_key == str(patient_id):
+                return questions
+            
+    return None

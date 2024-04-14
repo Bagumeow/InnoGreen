@@ -4,7 +4,8 @@ from fastapi.responses import JSONResponse
 from Chatbot import chatbot
 from uuid import uuid4
 from pydantic import BaseModel
-from .current_user import *
+from tools.tools import *
+# from .current_user import *
 
 router = APIRouter()
 
