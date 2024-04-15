@@ -1,0 +1,469 @@
+[
+    {
+        "22": [
+                {
+                    "id": "479",
+                    "name": "Giao tiếp:",
+                    "qset": [
+                        {
+                            "id_ques": 1,
+                            "question": "Trẻ có chỉ đúng vào đồ vật/ con vật trong tranh khi được hỏi không? VD, Con chó đâu? Cái cốc đâu?"
+                        },
+                        {
+                            "id_ques": 2,
+                            "question": "Trẻ có nói được câu 2-3 từ đúng ngữ cảnh không? VD, Mẹ về rồi"
+                        },
+                        {
+                            "id_ques": 3,
+                            "question": "Trẻ có biết làm theo mệnh lệnh đơn giản không? VD. Cất đồ chơi đi"
+                        }
+                    ]
+                },
+                {
+                    "id": "400",
+                    "name": "Vận động thô:",
+                    "qset": [
+                        {
+                            "id_ques": 4,
+                            "question": "Trẻ có biết bước lên ít nhất 1-2 bậc cửa/ cầu thang không?"
+                        },
+                        {
+                            "id_ques": 5,
+                            "question": "Trẻ có biết chạy nhanh và dừng lại mà không bị ngã không?"
+                        },
+                        {
+                            "id_ques": 6,
+                            "question": "Trẻ có thể giơ chân đá bóng khi bám tay không?"
+                        }
+                    ]
+                },
+                {
+                    "id": "207",
+                    "name": "Vận động tinh:",
+                    "qset": [
+                        {
+                            "id_ques": 7,
+                            "question": "Trẻ có biết dùng thìa xúc thức ăn đưa vào miệng không?"
+                        },
+                        {
+                            "id_ques": 8,
+                            "question": "Trẻ có biết xoay núm cửa, xoay nắp đồ chơi không?"
+                        },
+                        {
+                            "id_ques": 9,
+                            "question": "Trẻ có biết tự lật trang sách ( mỗi lần tự lật một vài trang ) không?"
+                        }
+                    ]
+                },
+                {
+                    "id": "351",
+                    "name": "Bắt chước và học:",
+                    "qset": [
+                        {
+                            "id_ques": 10,
+                            "question": "Trẻ có biết chơi tưởng tượng không? VD, Giả vờ gọi điện thoại"
+                        },
+                        {
+                            "id_ques": 11,
+                            "question": "Trẻ có bắt chước vẽ đường thẳng theo bạn không?"
+                        },
+                        {
+                            "id_ques": 12,
+                            "question": "Trẻ có biết cất đồ vật vào đúng chỗ không? VD, Cất đồ chơi vào hộp"
+                        }
+                    ]
+                },
+                {
+                    "id": "365",
+                    "name": "Cá nhân- Xã hội:",
+                    "qset": [
+                        {
+                            "id_ques": 13,
+                            "question": "Trẻ có biết uống nước bằng cốc không?"
+                        },
+                        {
+                            "id_ques": 14,
+                            "question": "Trẻ có biết bắt chước hành động không? VD : quét nhà, chải tóc..."
+                        },
+                        {
+                            "id_ques": 15,
+                            "question": "Trẻ có biết chơi giả vờ với đồ chơi của mình không? VD, Ru bé ngủ"
+                        }
+                    ]
+                },
+                {
+                    "id": "934",
+                    "name": "Các dấu hiệu khác thường khác:",
+                    "qset": [
+                        {
+                            "id_ques": 16,
+                            "question": "Trẻ có khi nào bị co giật/ ngất xỉu không?"
+                        },
+                        {
+                            "id_ques": 17,
+                            "question": "Trẻ có bất thường ở cổ, cột sống, thân mình, tay chân không?"
+                        },
+                        {
+                            "id_ques": 18,
+                            "question": "Trẻ có bất thường ở tai, bệnh về tai hoặc nghe kém không?"
+                        },
+                        {
+                            "id_ques": 19,
+                            "question": "Trẻ có bất thường ở mắt hoặc nhìn kém không?"
+                        },
+                        {
+                            "id_ques": 20,
+                            "question": "Trẻ có các bất thường nào khác không? VD: mặt, môi/ hàm ếch,..."
+                        }
+                    ]
+                }
+            ]
+    },
+    {
+        "36": [
+                {
+                    "id": "219",
+                    "name": "Giao tiếp:",
+                    "qset": [
+                        {
+                            "id_ques": 1,
+                            "question": "Trẻ có chỉ được 7 bộ phận cơ thể không? VD, Tay, chân,đầu..."
+                        },
+                        {
+                            "id_ques": 2,
+                            "question": "Trẻ có nói được câu 3-4 từ đúng ngữ cảnh không? VD, A mẹ về rồi"
+                        },
+                        {
+                            "id_ques": 3,
+                            "question": "Trẻ có biết nói họ và tên của mình khi được hỏi không?"
+                        }
+                    ]
+                },
+                {
+                    "id": "548",
+                    "name": "Vận động thô:",
+                    "qset": [
+                        {
+                            "id_ques": 4,
+                            "question": "Trẻ có tự bước lên cầu thang mỗi chân một bậc không?"
+                        },
+                        {
+                            "id_ques": 5,
+                            "question": "Trẻ có biết co hai chân nhảy về phía trước không?"
+                        },
+                        {
+                            "id_ques": 6,
+                            "question": "Trẻ có thể đá hoặc ném bóng/đá đồ vật mà không cần bám tay không?"
+                        }
+                    ]
+                },
+                {
+                    "id": "609",
+                    "name": "Vận động tinh:",
+                    "qset": [
+                        {
+                            "id_ques": 7,
+                            "question": "Trẻ có biết xâu một chuỗi hạt, xỏ dây giầy không?"
+                        },
+                        {
+                            "id_ques": 8,
+                            "question": "Trẻ có biết bắt chước vẽ 1 đường ngang/ dọc/ vòng tròn không?"
+                        },
+                        {
+                            "id_ques": 9,
+                            "question": "Trẻ có biết cầm kéo đúng cách không (có thể chưa biết cắt)?"
+                        }
+                    ]
+                },
+                {
+                    "id": "231",
+                    "name": "Bắt chước và học:",
+                    "qset": [
+                        {
+                            "id_ques": 10,
+                            "question": "Trẻ có biết bắt chước xếp 4 đồ vật thành 1 hàng ngang không?"
+                        },
+                        {
+                            "id_ques": 11,
+                            "question": "Trẻ có nói tên người trong ảnh khi bạn chỉ vào và hỏi “Ai đây” không?"
+                        },
+                        {
+                            "id_ques": 12,
+                            "question": "Trẻ có nhắc lại đúng thứ tự khi bạn nói 2-3 số liên tiếp không?VD,825(không dùng 3 số liên tục 123)"
+                        }
+                    ]
+                },
+                {
+                    "id": "703",
+                    "name": "Cá nhân- Xã hội:",
+                    "qset": [
+                        {
+                            "id_ques": 13,
+                            "question": "Trẻ có biết tự xúc ăn bằng thìa mà không rơi vãi không?"
+                        },
+                        {
+                            "id_ques": 14,
+                            "question": "Trẻ có biết tự mình mặc quần áo không?"
+                        },
+                        {
+                            "id_ques": 15,
+                            "question": "Trẻ có trả lời đúng khi bạn hỏi “Con là trai hay gái” không?"
+                        }
+                    ]
+                },
+                {
+                    "id": "527",
+                    "name": "Các dấu hiệu khác thường khác:",
+                    "qset": [
+                        {
+                            "id_ques": 16,
+                            "question": "Trẻ có khi nào bị co giật/ ngất xỉu không?"
+                        },
+                        {
+                            "id_ques": 17,
+                            "question": "Trẻ có bất thường ở mặt, cổ, cột sống, thân mình, tay chân không?"
+                        },
+                        {
+                            "id_ques": 18,
+                            "question": "Trẻ có bất thường ở tai, bệnh về tai hoặc nghe kém không?"
+                        },
+                        {
+                            "id_ques": 19,
+                            "question": "Trẻ có bất thường ở mắt hoặc nhìn kém không?"
+                        },
+                        {
+                            "id_ques": 20,
+                            "question": "Trẻ có các bất thường nào khác không? VD: mặt, môi/ hàm ếch,..."
+                        }
+                    ]
+                }
+            ]
+    },
+    {
+        "48": [
+                {
+                    "id": "278",
+                    "name": "Giao tiếp:",
+                    "qset": [
+                        {
+                            "id_ques": 1,
+                            "question": "Trẻ có kể tên 3 thứ thuộc nhóm không? VD: chó,mèo,gà thuộc nhóm con vật."
+                        },
+                        {
+                            "id_ques": 2,
+                            "question": "Trẻ có mô tả 2 đặc điểm của đồ vật không? VD, Quả bóng to và tròn"
+                        },
+                        {
+                            "id_ques": 3,
+                            "question": "Trẻ có dùng từ chỉ số lượng, thời gian đề không? VD: một cái kẹo, sáng nay..."
+                        }
+                    ]
+                },
+                {
+                    "id": "771",
+                    "name": "Vận động thô:",
+                    "qset": [
+                        {
+                            "id_ques": 4,
+                            "question": "Trẻ có tự trèo lên và trượt xuống cầu thang/ bậc cửa không?"
+                        },
+                        {
+                            "id_ques": 5,
+                            "question": "Trẻ có biết nhảy lò cò mà không bị ngã không?"
+                        },
+                        {
+                            "id_ques": 6,
+                            "question": "Trẻ có biết bắt bóng /đồ chơi/đồ vật bằng hai tay không?"
+                        }
+                    ]
+                },
+                {
+                    "id": "554",
+                    "name": "Vận động tinh:",
+                    "qset": [
+                        {
+                            "id_ques": 7,
+                            "question": "Trẻ có biết dùng kéo để cắt giấy không?"
+                        },
+                        {
+                            "id_ques": 8,
+                            "question": "Trẻ có biết vẽ hình vuông, hình tròn, dấu cộng theo mẫu không?"
+                        },
+                        {
+                            "id_ques": 9,
+                            "question": "Trẻ có biết vẽ người gồm 3 bộ phận không? VD: đầu, chân, tay."
+                        }
+                    ]
+                },
+                {
+                    "id": "708",
+                    "name": "Bắt chước và học:",
+                    "qset": [
+                        {
+                            "id_ques": 10,
+                            "question": "Trẻ có biết phân biệt về kích thước không? VD, Chỉ vào vật nhỏ hơn"
+                        },
+                        {
+                            "id_ques": 11,
+                            "question": "Trẻ có phân biệt “trên, dưới, giữa” không?VD: sách trên bàn..."
+                        },
+                        {
+                            "id_ques": 12,
+                            "question": "Trẻ có phân biệt được 5 màu khác nhau không?VD: đỏ, xanh, vàng..."
+                        }
+                    ]
+                },
+                {
+                    "id": "113",
+                    "name": "Cá nhân- Xã hội:",
+                    "qset": [
+                        {
+                            "id_ques": 13,
+                            "question": "Trẻ có biết tự rửa mặt, đánh răng không?"
+                        },
+                        {
+                            "id_ques": 14,
+                            "question": "Trẻ có biết tự mình mặc và cởi quần áo không?"
+                        },
+                        {
+                            "id_ques": 15,
+                            "question": "Trẻ có biết kể tên ít nhất 2 bạn của mình không? ( không tính tên chị em trong nhà )"
+                        }
+                    ]
+                },
+                {
+                    "id": "504",
+                    "name": "Các dấu hiệu khác thường khác: ",
+                    "qset": [
+                        {
+                            "id_ques": 16,
+                            "question": "Trẻ có khi nào bị co giật/ ngất xỉu không?"
+                        },
+                        {
+                            "id_ques": 17,
+                            "question": "Trẻ có bất thường ở cổ, cột sống, thân mình, tay chân không?"
+                        },
+                        {
+                            "id_ques": 18,
+                            "question": "Trẻ có bất thường ở tai, bệnh về tai hoặc nghe kém không?"
+                        },
+                        {
+                            "id_ques": 19,
+                            "question": "Trẻ có bất thường ở mắt hoặc nhìn kém không?"
+                        },
+                        {
+                            "id_ques": 20,
+                            "question": "Trẻ có các bất thường nào khác không? VD: mặt, môi/ hàm ếch,..."
+                        }
+                    ]
+                }
+        ]
+    },
+    {
+        "60": [
+            {
+                "id": "633",
+                "name": "id",
+                "qset": "random"
+            },
+            {
+                "id": "106",
+                "name": "Vận động thô:",
+                "qset": [
+                    {
+                        "id_ques": 4,
+                        "question": "Trẻ có ném bóng/ đồ vật ra xa khoảng 2m không?"
+                    },
+                    {
+                        "id_ques": 5,
+                        "question": "Trẻ có biết nhảy lò cò 1-2m mà không bị ngã không?"
+                    },
+                    {
+                        "id_ques": 6,
+                        "question": "Trẻ có biết đi kiễng chân từ 1-2m không?"
+                    }
+                ]
+            },
+            {
+                "id": "495",
+                "name": "Vận động tinh:",
+                "qset": [
+                    {
+                        "id_ques": 7,
+                        "question": "Trẻ có biết tô đè lên đường thẳng mà không chệch ra không?"
+                    },
+                    {
+                        "id_ques": 8,
+                        "question": "Trẻ có biết vẽ cả 3 hình (vuông, hình tròn, dấu cộng) theo mẫu không?"
+                    },
+                    {
+                        "id_ques": 9,
+                        "question": "Trẻ có biết vẽ người gồm 3-4 bộ phận không?VD: đầu, chân, tay"
+                    }
+                ]
+            },
+            {
+                "id": "735",
+                "name": "Bắt chước và học:",
+                "qset": [
+                    {
+                        "id_ques": 10,
+                        "question": "Trẻ có biết đếm đúng thứ tự từ 1 đến 10 không?"
+                    },
+                    {
+                        "id_ques": 11,
+                        "question": "Trẻ có nhận biết ít nhất 4 chữ cái không?"
+                    },
+                    {
+                        "id_ques": 12,
+                        "question": "Trẻ có nhận biết ít nhất 3 chữ số không?"
+                    }
+                ]
+            },
+            {
+                "id": "603",
+                "name": "Cá nhân- Xã hội:",
+                "qset": [
+                    {
+                        "id_ques": 13,
+                        "question": "Trẻ có biết nói họ tên, tuổi, giới, địa chỉ, điện thoại không?"
+                    },
+                    {
+                        "id_ques": 14,
+                        "question": "Trẻ có biết tự đi vệ sinh không?"
+                    },
+                    {
+                        "id_ques": 15,
+                        "question": "Trẻ có biết chơi theo lượt, theo nhóm không?"
+                    }
+                ]
+            },
+            {
+                "id": "177",
+                "name": "Các dấu hiệu khác thường khác: ",
+                "qset": [
+                    {
+                        "id_ques": 16,
+                        "question": "Trẻ có khi nào bị co giật/ ngất xỉu không?"
+                    },
+                    {
+                        "id_ques": 17,
+                        "question": "Trẻ có bất thường ở cổ, cột sống, thân mình, tay chân không?"
+                    },
+                    {
+                        "id_ques": 18,
+                        "question": "Trẻ có bất thường ở tai, bệnh về tai hoặc nghe kém không?"
+                    },
+                    {
+                        "id_ques": 19,
+                        "question": "Trẻ có bất thường ở mắt hoặc nhìn kém không?"
+                    },
+                    {
+                        "id_ques": 20,
+                        "question": "Trẻ có các bất thường nào khác không? VD: mặt, môi/ hàm ếch,..."
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,6 +1,13 @@
-from tools.tools import *
+# import sys
+# sys.path.insert(0, r'D:\E\InnoDumpling\innogreen-be\tools_h')
+
 # from tools import *
-from fastapi import  HTTPException, status, Depends, APIRouter
+from tools.tools import *
+from fastapi import  FastAPI, HTTPException, status, Depends, APIRouter
+
+# app=FastAPI()
+# @app.get("/user", response_model=User)
+
 router = APIRouter()
 
 @router.get("/user", response_model=User)
@@ -19,7 +26,8 @@ async def get_current_user(access_token: str = Depends(oauth2_scheme)):
         raise credentials_exception
     conn.close()
     return user
-# if __name__ == "__main__":
-#     import uvicorn
 
-#     uvicorn.run(app, host="0.0.0.0", port=8000)
+
+# if __name__ == '__main__':
+#     import uvicorn
+#     uvicorn.run(app, host="127.0.0.1", port=8000)
